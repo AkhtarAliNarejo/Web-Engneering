@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<style>
+label{
+  display: block;
+  width:200px;
+  float: left;
+ 
+  margin: 10px 5px;
+}
+input,select{
+  margin: 10px;
+  vertical-align: middle;
+}
+.checks{
+
+  vertical-align:bottom ;
+}
+#submit{
+  margin-left: 200px;
+}
+
+</style>
+
+
+</head>
+<body>
+   <h1>Forms</h1>
+<Form action="from-submitt.php" method="get">
+  <fieldset>
+    <legend>personal Information</legend>
+  <label for="first-name"> name</label><br/>
+  <input type="text" name="first name" autofocus required/><br/>
+  <label for="email">email</label> <br/>
+  <input type="email" name="email" placeholder="Enter a valid email address" required id="email"/><br/>
+</fieldset>
+<label for="checkbox">chek box</label>  <br/>
+
+  <input class="checks" type="checkbox" name="check" value="ch1" id="checkbox"/>check1 
+  <input class="checks"  type="checkbox" name="check" value="ch2"id="checkbox"/>chek2
+  
+  
+  <br/>
+  <label for="radio"> Radio</label><br/>
+
+  <input type="radio" name="radio" value="r1"id="radio"/>radio1
+  <input type="radio" name="radio" value="r2"id="radio"/>radio2
+  
+  <br/>
+  <label for="first-name"Message <br/>
+  <textarea name="Message"id="Message">  </textarea>
+  <br/>
+  <label for="first-name"Dropdown
+  <br/>
+  <select name="Dropdown">
+    <option value="o1">option1 </option>
+    <option value="o2">option2 </option>
+    <option value="o3">option3</option>
+    <option value="o4">option4</option>
+    <option value="o5"> option5</option>
+</select>
+  <br/>
+  <label for="Password">Password</label><br/>
+  <input type="password" name="password"/><br/>
+  <label for="Number">Number</label> <br/>
+ <input type="number" name="Number"/> <br/>
+ <label for="Range">Range</label><br/>
+  1 <input type="range" name="range" min="1" max="10" value="1"/>10<br/>
+  <label for="Date">Date</label><br/>
+  <input type="date" name="date"/> <br/>
+  <label for="Time">Time</label> <br/>
+  <input type="time" name="time"/> <br/>
+  <label for="color">color</label>   <br/>
+  <input type="color" name="color"/> <br/>
+<input id="submit" type="Subbmit" value="Send"/>
+
+
+</Form>
+
+
+
+
+</body>
+</html>
