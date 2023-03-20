@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--style>
+        
+   body, h1,p{
+    margin: 0%;
+    padding: 0%;
+
+    }
+
+        div{
+       width: 500px;
+       float:right;
+        }
+
+
+    #Block1{
+    background-color: aqua;
+
+    }
+    #Block2{
+    background-color:red;
+
+    }
+    #Block3{
+    background-color:tomato;
+    float: none;
+    clear: left;
+    }
+    img{
+        float:left;
+    }
+    </style-->
+<style>
+
+
+body,h1,p{
+
+    margin: 0%;
+    padding: 0%;
+}
+.block{
+
+    width: 29%;
+    float: left;
+    margin: 2%;
+    background-color: lightblue;
+}
+#parent-block{
+    height: 500px;
+    background-color: pink;
+}
+#Block2{
+position: relative;
+top: 20px;
+left: 50px;
+
+}
+#special-message{
+    position:fixed;
+    left: 20px;
+    bottom: 100px;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+ <!--img src="1.jpeg" width="280" height="213"/-->
+ <div id="parent-block">
+<div class="block" >
+    <H1>Heading1</H1> 
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+
+</p>
+</div>
+
+<div class="block" id="Block2">
+    <H1>Heading2</H1>
+    <p> 
+    when an unknown printer took a galley of type and scrambled it to make a type 
+    specimen book. It has survived not only five centuries, but also the leap into
+</p>
+</div>
+
+<div class="block">
+    <H1>Heading3</H1> 
+    <p>
+     electronic typesetting, remaining essentially unchanged. It was popularised in 
+     the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+     and more recently with desktop publishing software like Aldus PageMaker including 
+     versions of Lorem Ipsum
+    
+    </p>
+    </div>
+<div id="special-message">
+    special message
+</div>
+</div> 
+</body>
+</html>
