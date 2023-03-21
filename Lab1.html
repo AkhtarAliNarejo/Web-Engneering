@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+<script>
+
+function displayObjectKeysAndValues(obj) {
+  if (Object.keys(obj).length === 0) {
+    console.log("The object is empty");
+  } else {
+    console.log("Keys and values of the object:");
+
+    for (let key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        console.log(`${key}: ${obj[key]}`);
+
+        if (typeof obj[key] === "object" && obj[key] !== null) {
+          displayObjectKeysAndValues(obj[key]); // recursively display nested object
+        }
+      }
+    }
+  }
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!-- 
+
+Task No 9
+
+<script>
+
+function dateDiffInDays(date1, date2) {
+  // Convert both dates to milliseconds
+  const date1Ms = date1.getTime();
+  const date2Ms = date2.getTime();
+
+  // Calculate the difference in milliseconds
+  const diffMs = Math.abs(date1Ms - date2Ms);
+
+  // Convert the difference back to days and return
+  return Math.round(diffMs / (1000 * 60 * 60 * 24));
+}
+const date1 = new Date('2023-03-01');
+const date2 = new Date('2023-03-10');
+
+const diffInDays = dateDiffInDays(date1, date2); // returns 9
+
+
+
+</script>
+
+-->
+<!-- 
+Task No 8
+
+<script>
+
+
+function findElementsWithDigits(arr) {
+  const result = arr.filter(str => /\d/.test(str));
+  return result;
+}
+
+// Example usage
+const strings = ['hello', 'world123', 'foo1bar', '1234567890'];
+const result = findElementsWithDigits(strings);
+console.log(result); // Output: ['world123', 'foo1bar', '1234567890']
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+Task No 7
+
+<script>
+
+const reverseString = function(str) {
+  return str.split('').reverse().join('');
+};
+
+// Example usage
+console.log(reverseString('hello')); // Output: 'olleh'c
+
+
+
+
+
+
+
+</script>
+
+-->
+
+
+<!-- 
+  Task No 6
+<script>
+const calculateGrade = (marks) => {
+  const sum = marks.reduce((acc, curr) => acc + curr, 0);
+  const average = sum / marks.length;
+
+  let grade;
+  if (average >= 90) {
+    grade = 'A';
+  } else if (average >= 80) {
+    grade = 'B';
+  } else if (average >= 70) {
+    grade = 'C';
+  } else if (average >= 60) {
+    grade = 'D';
+  } else {
+    grade = 'F';
+  }
+
+  return `Sum: ${sum}, Average: ${average}, Grade: ${grade}`;
+}
+
+
+console.log(calculateGrade([80, 90, 85, 75])); // Sum: 330, Average: 82.5, Grade: B
+
+
+
+
+
+
+</script>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+Task No 5
+
+<script>
+
+function checkSpeed(speed) {
+  const speedLimit = 70;
+  const penaltyPointInterval = 5;
+  const penaltyPointThreshold = 10;
+  const suspensionThreshold = 120;
+
+  if (speed <= speedLimit) {
+    console.log("Good Safe Driving");
+  } else {
+    const penaltyPoints = Math.floor((speed - speedLimit) / penaltyPointInterval);
+    if (penaltyPoints <= penaltyPointThreshold) {
+      console.log(`Speed Limit Crossed by Penalty Point ${penaltyPoints}`);
+    } else {
+      console.log("License Suspended");
+    }
+  }
+checkSpeed(90);
+checkSpeed(150);
+}
+
+
+</script>
+
+
+-->
+
+
+
+
+
+   <!-- 
+   Task No (4)
+    4. Write a function which checks number till given input/parameter is odd or even.
+<script>
+
+function checkOddEven(limit) {
+  for (let i = 1; i <= limit; i++) {
+    if (i % 2 === 0) {
+      console.log(i + " is even");
+    } else {
+      console.log(i + " is odd");
+    }
+  }
+}
+
+checkOddEven(10);
+
+
+
+
+
+</script>
+--> 
+
+
+
+
+<!-- 
+ Task No 3   
+<script>
+
+
+
+
+  
+
+const obj={
+name:"Akhtar Ali",
+age:20,
+address:'sukkur iba university',
+city:'khairpur',
+state:'pak'
+
+};
+myfunction(obj);
+function myfunction(obj){
+  for (const key in obj){
+  if (Object.prototype.hasOwnProperty.call(obj,key)){
+     if(typeof obj[key]==="string"){
+         console.log('${key}:${obj[key]}');
+     }
+
+  }
+     
+  }
+
+}
+
+</script>
+
+-->
+
+
+    <!--
+   Task No 2
+
+    
+    <p id="demo"> </p>
+<script>
+    
+    var a = (123);
+
+    console.log(a);
+    var b = ("Akhtar Ali");
+
+   console.log(b);
+  
+var c=12.5
+console.log(c);
+
+
+
+
+</script>
+
+
+-->
+
+
+
+
+<!--h1>Task No 1</h1>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p> 
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo").innerHTML ="The value of z is: " + z;
+
+
+
+
+let myFloat = 3.14;
+let myFloat1=1.5;
+let myFloat2=myFloat+myFloat1;
+document.getElementById("demo1").innerHTML= "The value of float:" + myFloat2;
+
+ let myboolean=true;
+ document.getElementById("demo2").innerHTML="this is value of boolean:"+myboolean;
+
+ let myString = "Hello, world!";
+ document.getElementById("demo3").innerHTML="this is value of boolean:"+myString;
+ let myDate = new Date("2022-06-01");
+ document.getElementById("demo4").innerHTML="this is value of boolean:"+myDate;
+ let myUndefined;
+ document.getElementById("demo5").innerHTML="this is value of undefined:"+myUndefined;
+
+ let myIntegerArray = [1, 2, 3, 4, 5];
+
+ document.getElementById("demo6").innerHTML="this is value of array:"+myIntegerArray;
+
+ let myStringArray = ["apple", "banana", "orange"];
+ document.getElementById("demo7").innerHTML="this is value of array:"+myStringArray;
+
+ let myMixedArray = [1, "apple", true, undefined];
+
+ document.getElementById("demo8").innerHTML="this is value of array:"+myMixedArray;
+ let myObject = { ID: 1, Name: "ABC" };
+ document.getElementById("demo9").innerHTML="this is value of array:"+myObject;
+</script-->
+
+</body>
+</html>
